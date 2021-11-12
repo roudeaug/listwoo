@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Colors {
+class ColorChart {
   static const Color background = Color(0xfff0f7fe);
   static const Color primary = Color(0xff495f7a);
   static const Color secondary = Color(0xff9fc8f2);
