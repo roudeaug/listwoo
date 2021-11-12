@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:listwoo/config/color_chart.dart';
+import 'package:listwoo/pages/landing_page.dart';
 
 void main() {
   runApp(const ListwooApp());
@@ -11,10 +11,10 @@ class ListwooApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         title: 'Listwoo',
         debugShowCheckedModeBanner: false,
-        home: Container(color: ColorChart.background,),
+        home: LandingPage()
       );
   }
 }
