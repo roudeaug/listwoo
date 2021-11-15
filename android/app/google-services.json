@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "772262359947",
+    "project_id": "listwoo-848f4",
+    "storage_bucket": "listwoo-848f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772262359947:android:144db49894ba4bcd67358e",
+        "android_client_info": {
+          "package_name": "com.roudeaug.listwoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772262359947-lp2e9o5gni1nap04jh51m3p9fn8vff8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUk3c10u1ziGh6XqRbkaiK7qpnjnYPnM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772262359947-lp2e9o5gni1nap04jh51m3p9fn8vff8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

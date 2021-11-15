@@ -1,4 +1,4 @@
-package com.example.listwoo
+package com.roudeaug.listwoo
 
 import io.flutter.embedding.android.FlutterActivity
 
