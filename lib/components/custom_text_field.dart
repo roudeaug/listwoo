@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:listwoo/config/color_chart.dart';
 
@@ -6,11 +7,13 @@ class CustomTextField extends StatefulWidget {
   final String content;
   final IconData icon;
   final Color color;
+  final double marginBottom;
 
   const CustomTextField({
     required this.content,
     required this.icon,
-    required this.color
+    required this.color,
+    required this.marginBottom,
   });
 
   @override
@@ -23,7 +26,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return Container(
       width: double.infinity,
       height: 42,
-      margin: const EdgeInsets.only(bottom: 20.0),
+      margin: EdgeInsets.only(bottom: widget.marginBottom),
       decoration: BoxDecoration(
         borderRadius: const BorderRadius.all(Radius.circular(40.0)),
         color: ColorChart.primary,

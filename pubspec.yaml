@@ -66,12 +66,9 @@ flutter:
   fonts:
     - family: BerlinSansFB
       fonts:
-        - asset: fonts/Berlin-Sans-FB-Light.otf
-          weight: 300
-        - asset: fonts/Berlin-Sans-FB-Regular.ttf
-          weight: 400
-        - asset: fonts/Berlin-Sans-FB-Bold.ttf
-          weight: 600
+        - asset: fonts/Berlin-Sans-FB/Berlin-Sans-FB-Bold.ttf
+        - asset: fonts/Berlin-Sans-FB/Berlin-Sans-FB-Light.otf
+        - asset: fonts/Berlin-Sans-FB/Berlin-Sans-FB-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

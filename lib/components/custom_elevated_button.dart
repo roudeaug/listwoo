@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:listwoo/config/color_chart.dart';
-import 'package:listwoo/controllers/auth/auth_controller.dart';
-import 'package:listwoo/pages/auth/auth_off/sign_in_page.dart';
 
 class CustomElevatedButton extends StatefulWidget {
   final String content;
-  final String action;
   final Color color;
+  final String routeName;
+  final double marginBottom;
 
-  const CustomElevatedButton(
-      {required this.content, required this.action, required this.color});
+  const CustomElevatedButton({
+    required this.content,
+    required this.color,
+    required this.routeName,
+    required this.marginBottom
+  });
 
   @override
   _CustomElevatedButtonState createState() => _CustomElevatedButtonState();
@@ -18,17 +22,33 @@ class CustomElevatedButton extends StatefulWidget {
 class _CustomElevatedButtonState extends State<CustomElevatedButton> {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       width: double.infinity,
       height: 42,
+      margin: EdgeInsets.only(bottom: widget.marginBottom),
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.all(Radius.circular(40.0)),
+        color: ColorChart.primary,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: const Offset(1, 3),
+          ),
+        ],
+      ),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            primary: ColorChart.accent, shape: const StadiumBorder()),
-        child: Text(widget.content),
-        // Lance la page de connexion pour un utilisateur non authentifié
+            primary: widget.color, shape: const StadiumBorder()),
+        child: Text(
+          widget.content,
+          style: const TextStyle(
+            fontSize: 16.0), 
+            overflow: TextOverflow.fade),
+        // Génère la route associée au paramètre indiqué
         onPressed: () {
-          AuthControllerAction authRouter = AuthControllerAction();
-          authRouter.router(this.context, widget.action);
+          Navigator.pushNamed(context, widget.routeName);
         },
       ),
     );

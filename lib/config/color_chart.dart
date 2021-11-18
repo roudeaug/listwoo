@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 // Palette de couleurs utilisées dans l'application
 class ColorChart {

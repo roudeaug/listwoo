@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:listwoo/pages/auth/auth_on/splash_screen_page.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:listwoo/pages/splash_screen_page.dart';
 
 // Permet de lancer l'affichage pour les utilisateurs authentifiés
 class MainController extends StatefulWidget {

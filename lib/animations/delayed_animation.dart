@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'dart:async';
 
 // Génère l'animation de fondu sur les pages d'acceuil
