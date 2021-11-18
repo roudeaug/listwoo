@@ -7,8 +7,9 @@ import 'package:listwoo/animations/delayed_animation.dart';
 import 'package:listwoo/config/color_chart.dart';
 import 'package:listwoo/config/config.dart';
 
-import '../home_page.dart';
+import '../../home_page.dart';
 
+//Page de lancement de l'application si utilisateur authentifié
 class SplashScreenPage extends StatefulWidget {
   const SplashScreenPage({Key? key}) : super(key: key);
 
@@ -18,6 +19,7 @@ class SplashScreenPage extends StatefulWidget {
 
 class _SplashScreenPageState extends State<SplashScreenPage> {
   
+  // Lance la page d'acceuil après un lapse de temps défini dans config/config.dart
   @override
   void initState() {
     super.initState();
@@ -30,6 +32,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
     );
   }
 
+  // Eléments constitutifs de la page
   @override
   Widget build(BuildContext context) {
     return Scaffold(

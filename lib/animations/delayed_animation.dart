@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+// Génère l'animation de fondu sur les pages d'acceuil
 class DelayedAnimation extends StatefulWidget {
   final Widget child;
   final int delay;
-  // ignore: use_key_in_widget_constructors
-  const DelayedAnimation({required this.delay, required this.child});
+  const DelayedAnimation({Key? key, required this.delay, required this.child}) : super(key: key);
 
   @override
   _DelayedAnimationState createState() => _DelayedAnimationState();

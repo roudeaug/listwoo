@@ -1,3 +1,4 @@
+// Modèle de données "Utilisateur"
 class User {
   final String name;
   final String avatar;
